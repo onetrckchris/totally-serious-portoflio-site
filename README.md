@@ -1,2 +1,2 @@
-# totally-serious-portoflio-site
+# My Totally Serious Portfolio Website
 Not actually very serious.
