@@ -1,15 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 
 import './App.css';
 
 function App() {
 	return (
-		<div className="App">
+		<AppContainer>
 			<Navbar />
-		</div>
+		</AppContainer>
 	);
 }
+
+const AppContainer = styled.div`
+	width: 70%;
+	margin: auto;
+`;
 
 export default App;
