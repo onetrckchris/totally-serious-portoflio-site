@@ -7,6 +7,7 @@ import { AdContainer } from './components/aboutme/Advertisement';
 import ReviewAndSome from './components/reviews/ReviewAndSome';
 import ReviewSummary from './components/reviews/ReviewSummary';
 import CommentSection from './components/input/comment_section/CommentSection';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -27,6 +28,7 @@ function App() {
 				</Main>
 				<AdContainer rightAd />
 			</Row>
+			<Footer />
 		</AppContainer>
 	);
 }
@@ -48,7 +50,7 @@ const Row = styled.div`
 const AppContainer = styled.div`
 	width: 80%;
 	margin: auto;
-	padding-bottom: 20px;
+	padding-bottom: 2px;
 	display: flex;
 	flex-direction: column;
 `;
