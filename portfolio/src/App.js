@@ -22,6 +22,7 @@ function App() {
 				</Main>
 				<AdContainer rightAd />
 			</Row>
+			<AdContainer />
 		</AppContainer>
 	);
 }

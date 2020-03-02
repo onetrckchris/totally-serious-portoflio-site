@@ -11,7 +11,8 @@ export const AdContainer = styled.img`
 	height: 100px;
 	margin-top: 10px;
 	align-self: center;
-	background-color: #f2f2f2;
+    background-color: #f2f2f2;
+    cursor: pointer;
 	
 	${props =>
         props.leftAd && css`

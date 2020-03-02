@@ -32,6 +32,11 @@ const ReviewAndSome = () => {
 
                 {/* Project Rankings Section */}
                 <h4><Lite>Project Rankings</Lite></h4>
+                <Project>
+                    <a href="https://nostalgic-yonath-730297.netlify.com/">Mobalytics Copy Practice:</a>
+                    <p><Lite>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Lite></p>
+                    <ProjectRating src="./imgs/result.png" alt="#" />
+                </Project>
             </SubContainer>
         </Container>
     );
@@ -43,6 +48,17 @@ const Row = styled.div`
     margin-bottom: 10px;
 `;
 
+const Project = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    a {
+        text-decoration: underline;
+        color: black;
+        cursor: pointer;
+    }
+`;
+
 const Container = styled.div`
     display: flex;
     justify-content: space-between;
@@ -52,6 +68,11 @@ const Container = styled.div`
 const Award = styled.img`
     width: 30px;
     margin-right: 7px;
+`;
+
+const ProjectRating = styled.img`
+    width: 85px;
+    align-self: center;
 `;
 
 const SubContainer = styled.div`
