@@ -2,10 +2,15 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
+import { Lite } from '../App';
+
 const Navbar = () => {
     return (
         <NavContainer>
-            <NavLink title to="/">Chris's Portfolio</NavLink>
+            <NavLink title to="/">
+                <TitleImg src="./imgs/robot.png" alt="#" />
+                <Lite>Reviewerdude</Lite>
+            </NavLink>
             <nav>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
@@ -23,6 +28,11 @@ const NavContainer = styled.div`
     border: 1px solid black;
 `;
 
+const TitleImg = styled.img`
+    width: 40px;
+    margin-right: 15px;
+`;
+
 const NavLink = styled(Link)`
     margin-right: 20px;
     text-decoration: none;
@@ -33,6 +43,7 @@ const NavLink = styled(Link)`
         props.title && css`
             margin: 10px 0;
             font-size: 1.8rem;
+            display: flex;
         `}
 `;
 

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Video = () => {
     return (
         <VideoContainer>
-            About Me Video
+            <img src="./imgs/play-button.png" alt="#" />
         </VideoContainer>
     );
 };
@@ -13,9 +13,14 @@ const Video = () => {
 const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
-	border: 1px solid black;
+    border: 1px solid black;
+    cursor: pointer;
 	height: 375px;
-	align-items: center;
+    align-items: center;
+    
+    img {
+        width: 40px;
+    }
 `;
 
 export default Video;

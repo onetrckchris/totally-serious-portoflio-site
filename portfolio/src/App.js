@@ -26,6 +26,10 @@ function App() {
 	);
 }
 
+export const Lite = styled.span`
+    font-weight: 300;
+`;
+
 const ReviewedBy = styled.span`
 	font-size: 0.8rem;
 	margin-top: 10px;
