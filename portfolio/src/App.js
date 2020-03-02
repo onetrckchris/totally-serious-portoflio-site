@@ -6,6 +6,7 @@ import Video from './components/aboutme/Video';
 import { AdContainer } from './components/aboutme/Advertisement';
 import ReviewAndSome from './components/reviews/ReviewAndSome';
 import ReviewSummary from './components/reviews/ReviewSummary';
+import CommentSection from './components/input/comment_section/CommentSection';
 
 import './App.css';
 
@@ -21,10 +22,11 @@ function App() {
 					<ReviewedBy>Reviewed by the man himself, March 1st 2020 | 9:31 PM PST</ReviewedBy>
 					<ReviewAndSome />
 					<ReviewSummary />
+					<AdContainer full />
+					<CommentSection />
 				</Main>
 				<AdContainer rightAd />
 			</Row>
-			<AdContainer />
 		</AppContainer>
 	);
 }

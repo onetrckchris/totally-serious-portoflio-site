@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { Lite } from '../App';
-import Searchbar from './Searchbar';
+import Searchbar from './input/Searchbar';
 
 const Navbar = () => {
     return (

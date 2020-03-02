@@ -27,6 +27,11 @@ export const AdContainer = styled.img`
 			height: 500px;
 			align-self: flex-start;
 		`}
+
+	${props =>
+		props.full && css`
+			width: 100%;
+		`}
 `;
 
 export default Advertisement;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
-import { populateSearchbar } from '../store/actions';
+import { populateSearchbar } from '../../store/actions';
 
 const Searchbar = ({filledName, populateSearchbar}) => {
     return (
