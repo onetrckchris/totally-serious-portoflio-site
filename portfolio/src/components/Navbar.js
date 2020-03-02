@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { Lite } from '../App';
+import Searchbar from './Searchbar';
 
 const Navbar = () => {
     return (
@@ -11,11 +12,12 @@ const Navbar = () => {
                 <TitleImg src="./imgs/robot.png" alt="#" />
                 <Lite>Reviewerdude</Lite>
             </NavLink>
-            <nav>
+            {/* <nav>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
                 <NavLink to="/projects">Projects</NavLink>
-            </nav>
+            </nav> */}
+            <Searchbar />
         </NavContainer>
     );    
 };
