@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
-const Searchbar = () => {
-    const [filledName, setFilledName] = useState('')
+import { populateSearchbar } from '../store/actions';
 
-    let count = 0;
-    const nameArray = ['C', 'h', 'r', 'i', 's', 't', 'i', 'a', 'n', ' ', 'P', 'e', 'l', 'a', 'y', 'o'];
-
+const Searchbar = ({filledName, populateSearchbar}) => {
     return (
         <SearchContainer>
-            <Search type="search" value={filledName} />
+            <Search 
+                value={filledName} 
+                onChange={() => populateSearchbar()}
+                spellCheck="false"
+            />
             <img src="./imgs/search.png" alt="#" />
         </SearchContainer>
     );
@@ -37,4 +39,10 @@ const Search = styled.input`
     }
 `;
 
-export default Searchbar;
+const mapStateToProps = (state) => {
+    return {
+        filledName: state.filledName
+    }
+}
+
+export default connect(mapStateToProps, { populateSearchbar })(Searchbar);

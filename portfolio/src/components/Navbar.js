@@ -12,11 +12,6 @@ const Navbar = () => {
                 <TitleImg src="./imgs/robot.png" alt="#" />
                 <Lite>Reviewerdude</Lite>
             </NavLink>
-            {/* <nav>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-                <NavLink to="/projects">Projects</NavLink>
-            </nav> */}
             <Searchbar />
         </NavContainer>
     );    
