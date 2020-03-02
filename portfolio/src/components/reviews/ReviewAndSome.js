@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-import { Lite } from '../App';
+import { Lite } from '../../App';
 
 const ReviewAndSome = () => {
     return (
@@ -30,8 +30,8 @@ const ReviewAndSome = () => {
                 </Row>
                 <hr></hr>
 
-                {/* Project Rankings Section */}
-                <h4><Lite>Project Rankings</Lite></h4>
+                {/* Project Ratings Section */}
+                <h4><Lite>Project Ratings</Lite></h4>
                 <Project>
                     <a href="https://nostalgic-yonath-730297.netlify.com/">Mobalytics Copy Practice:</a>
                     <p><Lite>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Lite></p>
@@ -71,7 +71,7 @@ const Award = styled.img`
 `;
 
 const ProjectRating = styled.img`
-    width: 85px;
+    width: 100px;
     align-self: center;
 `;
 

@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Navbar from './components/Navbar';
-import Video from './components/Video';
-import { AdContainer } from './components/Advertisement';
-import ReviewAndSome from './components/ReviewAndSome';
+import Video from './components/aboutme/Video';
+import { AdContainer } from './components/aboutme/Advertisement';
+import ReviewAndSome from './components/reviews/ReviewAndSome';
+import ReviewSummary from './components/reviews/ReviewSummary';
 
 import './App.css';
 
@@ -17,8 +18,9 @@ function App() {
 				<AdContainer leftAd />
 				<Main>
 					<Video>About Me Video will go here</Video>
-					<ReviewedBy>Reviewed by the man himself, March 3rd 2020 | 9:31 PM PST</ReviewedBy>
+					<ReviewedBy>Reviewed by the man himself, March 1st 2020 | 9:31 PM PST</ReviewedBy>
 					<ReviewAndSome />
+					<ReviewSummary />
 				</Main>
 				<AdContainer rightAd />
 			</Row>
