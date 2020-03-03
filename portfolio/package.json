@@ -32,8 +32,11 @@
     ]
   },
   "devDependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "formik": "^2.1.4",
+    "helmet": "^3.21.3",
     "knex": "^0.20.10",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
