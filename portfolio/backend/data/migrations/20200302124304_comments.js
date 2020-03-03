@@ -8,7 +8,7 @@ exports.up = function(knex) {
             .notNullable();
         tbl.timestamp('created_at')
             .defaultTo(knex.fn.now());
-    })
+    });
 };
 
 exports.down = function(knex) {
