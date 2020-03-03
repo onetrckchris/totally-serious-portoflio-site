@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const ReviewSummary = () => {
     return (
@@ -7,8 +7,11 @@ const ReviewSummary = () => {
             <RelativeContainer>
                 <ProfileImg src="./imgs/robot2.png" alt="#" />
             </RelativeContainer>
-            <Review></Review>
-            <Rating>A-</Rating>
+            <ReviewContainer>
+                <Review overall>Overall Rating</Review>
+                <Review>"Needs a lot more practice. 10/10, would hire again."</Review>
+            </ReviewContainer>
+            <Rating>B+</Rating>
         </Container>
     );
 };
@@ -21,10 +24,25 @@ const Container = styled.div`
     margin: 45px 0 30px 0;
 `;
 
-const Review = styled.div`
-    height: 125px;
+const ReviewContainer = styled.div`
+    display: flex;
     width: 75%;
+    flex-direction: column;
+`;
+
+const Review = styled.div`
+    height: 62.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
     border-right: none;
+
+    ${props =>
+        props.overall && css`
+            padding-left: 80px;
+            font-size: 1.7rem;
+        `}
 `;
 
 const Rating = styled.div`

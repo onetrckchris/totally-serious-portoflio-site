@@ -11,6 +11,8 @@ const ReviewAndSome = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </SubContainer>
             <VerticalLine></VerticalLine>
             <SubContainer accolades>
@@ -35,7 +37,13 @@ const ReviewAndSome = () => {
                 <Project>
                     <a href="https://nostalgic-yonath-730297.netlify.com/">Mobalytics Copy Practice:</a>
                     <p><Lite>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Lite></p>
-                    <ProjectRating src="./imgs/result.png" alt="#" />
+                    <ProjectRating>A-</ProjectRating>
+                </Project>
+
+                <Project>
+                    <a href="https://bettersubstats.netlify.com/">Subreddit Stats:</a>
+                    <p><Lite>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Lite></p>
+                    <ProjectRating>C+</ProjectRating>
                 </Project>
             </SubContainer>
         </Container>
@@ -51,6 +59,13 @@ const Row = styled.div`
 const Project = styled.div`
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+
+    &:last-child {
+        border-bottom: none;
+    }
 
     a {
         text-decoration: underline;
@@ -70,8 +85,17 @@ const Award = styled.img`
     margin-right: 7px;
 `;
 
-const ProjectRating = styled.img`
+const ProjectRating = styled.div`
     width: 100px;
+    font-size: 2.8rem;
+    font-weight: 200;
+    height: 100px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E21B1B;
     align-self: center;
 `;
 
@@ -79,6 +103,7 @@ const SubContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 58%;
+    line-height: 28px;
 
     h2, h4 {
         align-self: center;

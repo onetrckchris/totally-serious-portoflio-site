@@ -32,6 +32,14 @@ server.post('/comment', (req, res) => {
         })
 })
 
+server.delete('/comment/:id', (req, res) => {
+    const id = req.params.id;
+
+    return commentModel.deleteComment(id)
+        .then(count => res.status(200).json(count))
+        .catch(error => res.status(500).json({ message: 'Internal Server Error!' }));
+})
+
 server.listen(port, () => {
     console.log(`Server listening on port ${port}...`);
 });

@@ -2,7 +2,8 @@ const db = require('../db-config');
 
 module.exports = {
     postComment,
-    getComments
+    getComments,
+    deleteComment
 };
 
 function postComment(comment) {
@@ -14,7 +15,8 @@ function getComments() {
     return db('comments');
 };
 
-// function deleteComment(username) {
-//     return db('comments')
-//         .where()
-// }
+function deleteComment(id) {
+    return db('comments')
+        .where({ id })
+        .delete()
+}

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 
 import { getComments } from '../../../store/actions';
+import Comment from './Comment';
 
 const Comments = ({comments, fetching, getComments}) => {
     useEffect(() => {
@@ -10,16 +11,24 @@ const Comments = ({comments, fetching, getComments}) => {
     }, [])
 
     return (
-        <div>
+        <CommentsSection>
             { comments.length 
                 ? comments.map(comment => (
-                    <span>{comment.username}</span>
+                    <Comment comment={comment} />
                 )) 
                 : <h1>No comments yet!</h1>
             }
-        </div>
+        </CommentsSection>
     );
 };
+
+const CommentsSection = styled.div`
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
 
 const mapStateToProps = (state) => {
     return {
