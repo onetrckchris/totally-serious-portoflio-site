@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 import { Lite } from '../../App';
+import { device } from '../../style-variables/devices';
 
 const ReviewAndSome = () => {
     return (
@@ -82,6 +83,14 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+
+    @media ${device.tablet} {
+        flex-direction: column;
+    } 
+
+    @media ${device.mobileL} {
+        padding: 0 20px;
+    }
 `;
 
 const Award = styled.img`
@@ -122,9 +131,17 @@ const SubContainer = styled.div`
         padding-bottom: 10px;
     }
 
+    @media ${device.tablet} {
+        width: 100%;
+    }
+
     ${props =>
         props.accolades && css`
             width: 38%;
+            
+            @media ${device.tablet} {
+                align-items: center;
+            }
         `}
 `;
 

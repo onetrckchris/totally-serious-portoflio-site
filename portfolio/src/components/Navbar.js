@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { Lite } from '../App';
 import Searchbar from './input/Searchbar';
 
+import { device } from '../style-variables/devices';
+
 const Navbar = () => {
     return (
         <NavContainer>
@@ -23,6 +25,12 @@ const NavContainer = styled.div`
     justify-content: space-between;
     padding: 0 20px;
     border: 1px solid black;
+
+    @media ${device.mobileL} {
+        justify-content: center;
+        border: none;
+        padding: 20px;
+    }
 `;
 
 const TitleImg = styled.img`
@@ -31,7 +39,6 @@ const TitleImg = styled.img`
 `;
 
 const NavLink = styled(Link)`
-    margin-right: 20px;
     text-decoration: none;
     color: black;
     font-weight: 600;

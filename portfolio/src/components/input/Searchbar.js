@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { populateSearchbar } from '../../store/actions';
 
+import { device } from '../../style-variables/devices';
+
 const Searchbar = ({filledName, populateSearchbar}) => {
     return (
         <SearchContainer>
@@ -25,6 +27,10 @@ const SearchContainer = styled.div`
         padding: 7px;
         border: 1px solid black;
         border-left: none;
+    }
+
+    @media ${device.mobileL} {
+        display: none;
     }
 `;
 

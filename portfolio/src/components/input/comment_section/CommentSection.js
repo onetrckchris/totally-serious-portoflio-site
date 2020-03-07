@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Form, withFormik, Field } from 'formik';
 import * as Yup from 'yup';
 
+import { device } from '../../../style-variables/devices';
+
 const CommentSection = () => {
     return (
         <StyledForm>
@@ -16,6 +18,10 @@ const CommentSection = () => {
 const StyledForm = styled(Form)`
     display: flex;
     flex-direction: column;
+
+    @media ${device.mobileL} {
+        align-items: center;
+    }
 `;
 
 const UsernameField = styled(Field)`
@@ -23,6 +29,11 @@ const UsernameField = styled(Field)`
     margin-top: 22px;
     outline: none;
     padding: 5px;
+
+    @media ${device.mobileL} {
+        margin: 0;
+        width: 60%;
+    }
 `;
 
 const CommentTextArea = styled(Field)`

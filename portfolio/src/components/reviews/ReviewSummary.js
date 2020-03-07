@@ -32,6 +32,10 @@ const Container = styled.div`
     @media ${device.laptopL} {
         width: 80%;
     }
+
+    @media ${device.tablet} {
+        width: 100%;
+    }
 `;
 
 const ReviewContainer = styled.div`
@@ -46,12 +50,13 @@ const Review = styled.div`
     font-size: 0.9rem;
     justify-content: center;
     align-items: center;
+    padding: 15px;
     font-weight: 300;
     border-right: none;
 
     ${props =>
         props.overall && css`
-            padding-left: 80px;
+            padding: 15px 0 0 80px;
             font-size: 1.7rem;
         `}
 `;

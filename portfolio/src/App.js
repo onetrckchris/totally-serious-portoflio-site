@@ -72,6 +72,10 @@ const AppContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 
+	@media ${device.laptopL} {
+		width: 90%;
+	}
+
 	@media ${device.laptop} {
 		width: 98%;
 	}
@@ -83,6 +87,10 @@ const Main = styled.main`
 	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
+
+	@media ${device.mobileL} {
+		width: 100%;
+	}
 `;
 
 const mapDispatchToProps = dispatch => ({
