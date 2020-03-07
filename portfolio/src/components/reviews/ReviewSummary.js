@@ -9,9 +9,9 @@ const ReviewSummary = () => {
             </RelativeContainer>
             <ReviewContainer>
                 <Review overall>Overall Rating</Review>
-                <Review>"Needs some more practice. 10/10, would hire again."</Review>
+                <Review>"Needs some more practice. 10/10, would hire again." - IGN</Review>
             </ReviewContainer>
-            <Rating>B+</Rating>
+            <Rating>9</Rating>
         </Container>
     );
 };
@@ -33,6 +33,7 @@ const ReviewContainer = styled.div`
 const Review = styled.div`
     height: 62.5px;
     display: flex;
+    font-size: 0.9rem;
     justify-content: center;
     align-items: center;
     font-weight: 300;

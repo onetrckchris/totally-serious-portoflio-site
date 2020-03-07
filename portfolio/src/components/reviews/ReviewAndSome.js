@@ -36,19 +36,23 @@ const ReviewAndSome = () => {
                 <h4><Lite>Project Ratings</Lite></h4>
                 <Project>
                     <a href="https://nostalgic-yonath-730297.netlify.com/">Mobalytics Copy Practice:</a>
-                    <p><Lite>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Lite></p>
-                    <ProjectRating>A-</ProjectRating>
+                    <p><Lite>In an attempt to score a job at one of his favorite analytic eSport sites, Pelayo re-created that site's card gallery page with <Italic>almost</Italic> all of it's functionality...</Lite></p>
+                    <ProjectRating>9.5</ProjectRating>
                 </Project>
 
                 <Project>
                     <a href="https://bettersubstats.netlify.com/">Subreddit Stats:</a>
-                    <p><Lite>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Lite></p>
-                    <ProjectRating>C+</ProjectRating>
+                    <p><Lite>His first team-based project with an actual deadline proved to be a challenging one. However difficult as it may have been this was Pelayo's introduction to his new found favorite work environment... High pressure with a small team.</Lite></p>
+                    <ProjectRating>8</ProjectRating>
                 </Project>
             </SubContainer>
         </Container>
     );
 };
+
+const Italic = styled.span`
+    font-style: italic;
+`;
 
 const Row = styled.div`
     display: flex;

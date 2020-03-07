@@ -11,15 +11,17 @@ const Video = () => {
 
 // Temporarily making this a flex container until I convert it into a video like it's support to be.
 const VideoContainer = styled.div`
-	display: flex;
-	justify-content: center;
+    position: relative;
     border: 1px solid black;
     cursor: pointer;
-	height: 375px;
-    align-items: center;
+    padding-bottom: 56.25%;
     
     img {
         width: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 `;
 

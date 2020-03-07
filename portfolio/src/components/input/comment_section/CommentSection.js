@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Form, withFormik, Field } from 'formik';
 import * as Yup from 'yup';
 
-const CommentSection = (props) => {
+const CommentSection = () => {
     return (
         <StyledForm>
             <UsernameField type="text" name="username" placeholder="Who are you?" />

@@ -74,6 +74,7 @@ const AppContainer = styled.div`
 
 const Main = styled.main`
 	width: 65%;
+	max-width: 800px;
 	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
