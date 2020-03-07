@@ -93,6 +93,7 @@ const ProjectRating = styled.div`
     width: 100px;
     font-size: 2.8rem;
     font-weight: 200;
+    margin-top: 18px;
     height: 100px;
     color: white;
     border-radius: 50%;

@@ -13,6 +13,7 @@ import Comments from './components/input/comment_section/Comments';
 
 import { postComment } from './store/actions';
 
+import { device } from './style-variables/devices';
 import './App.css';
 
 function App(props) {
@@ -21,7 +22,7 @@ function App(props) {
         "I can only imagine a developer of that caliber is leading a team in Silicon Valley by this point.",
         "I hope that one day I might be worthy of basking in the glory of this developer's brilliant code. Only then will I feel fulfilled.",
         "Is there any way I could reach out to this developer? I'd like to give him lots of money, please.",
-        "What a gentleman and a scholar as well, incredible. I wonder if he'd be open to meeting my daughter."
+		"What a gentleman and a scholar as well, incredible. I wonder if he'd be open to meeting my daughter."
     ]
 
     const generateComment = () => {
@@ -70,6 +71,10 @@ const AppContainer = styled.div`
 	padding-bottom: 2px;
 	display: flex;
 	flex-direction: column;
+
+	@media ${device.laptop} {
+		width: 98%;
+	}
 `;
 
 const Main = styled.main`

@@ -8,13 +8,13 @@ import Comment from './Comment';
 const Comments = ({comments, fetching, getComments}) => {
     useEffect(() => {
         getComments();
-    }, [])
+    }, [getComments])
 
     return (
         <CommentsSection>
             { comments.length 
                 ? comments.map(comment => (
-                    <Comment comment={comment} />
+                    <Comment key={comment.id} comment={comment} />
                 )) 
                 : <h1>No comments yet!</h1>
             }

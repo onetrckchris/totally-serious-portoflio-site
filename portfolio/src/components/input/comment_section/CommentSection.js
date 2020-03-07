@@ -20,7 +20,7 @@ const StyledForm = styled(Form)`
 
 const UsernameField = styled(Field)`
     width: 150px;
-    margin-top: 20px;
+    margin-top: 22px;
     outline: none;
     padding: 5px;
 `;

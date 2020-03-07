@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 import { 
     START_POPULATION,
     POST_COMMENT_START,
@@ -7,7 +5,7 @@ import {
     POST_COMMENT_FAIL,
     GET_COMMENTS_START,
     GET_COMMENTS_SUCCESS,
-    GET_COMMENTS_FAIL
+    // GET_COMMENTS_FAIL
  } from '../actions';
 
 const initialState = {
@@ -27,7 +25,7 @@ const reducer = (state = initialState, action) => {
                 return nameArray[state.count];
             }
 
-            if (state.filledName.length == 16) {
+            if (state.filledName.length === 16) {
                 return state;
             }
 
@@ -65,12 +63,6 @@ const reducer = (state = initialState, action) => {
                 fetching: false,
                 comments: action.payload.data,
                 error: ''
-            }
-        case GET_COMMENTS_SUCCESS:
-            return {
-                ...state,
-                fetching: false,
-                error: action.payload,
             }
         default:
             return state;

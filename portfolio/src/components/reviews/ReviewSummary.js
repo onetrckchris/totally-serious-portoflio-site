@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
+import { device } from '../../style-variables/devices';
+
 const ReviewSummary = () => {
     return (
         <Container>
@@ -22,6 +24,14 @@ const Container = styled.div`
     display: flex;
     background-color: #f2f2f2;
     margin: 45px 0 30px 0;
+
+    @media ${device.laptop} {
+        width: 85%;
+    }
+
+    @media ${device.laptopL} {
+        width: 80%;
+    }
 `;
 
 const ReviewContainer = styled.div`
