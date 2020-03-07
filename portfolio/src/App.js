@@ -36,7 +36,7 @@ function App(props) {
 				<AdContainer leftAd />
 				<Main>
 					<Video>About Me Video will go here</Video>
-					<ReviewedBy>Reviewed by the man himself, March 1st 2020 | 9:31 PM PST</ReviewedBy>
+					<ReviewedBy>Definitely not reviewed by Christian Pelayo, March 1st 2020 | 9:31 PM PST</ReviewedBy>
 					<ReviewAndSome />
 					<ReviewSummary />
 					<AdContainer full />

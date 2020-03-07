@@ -9,7 +9,7 @@ const ReviewSummary = () => {
             </RelativeContainer>
             <ReviewContainer>
                 <Review overall>Overall Rating</Review>
-                <Review>"Needs a lot more practice. 10/10, would hire again."</Review>
+                <Review>"Needs some more practice. 10/10, would hire again."</Review>
             </ReviewContainer>
             <Rating>B+</Rating>
         </Container>
