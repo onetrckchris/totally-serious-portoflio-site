@@ -58,6 +58,10 @@ export const Lite = styled.span`
 const ReviewedBy = styled.span`
 	font-size: 0.8rem;
 	margin-top: 10px;
+
+	@media ${device.mobileL} {
+        padding: 0 20px;
+    }
 `;
 
 const Row = styled.div`

@@ -55,6 +55,11 @@ const Submit = styled.button`
     align-self: flex-end;
     cursor: pointer;
     padding: 5px;
+
+    @media ${device.mobileL} {
+        align-self: auto;
+        width: 80%;
+    }
 `;
 
 export default withFormik({

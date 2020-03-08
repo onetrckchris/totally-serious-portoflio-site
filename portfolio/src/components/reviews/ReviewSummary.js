@@ -58,6 +58,16 @@ const Review = styled.div`
         props.overall && css`
             padding: 15px 0 0 80px;
             font-size: 1.7rem;
+
+            @media ${device.mobileL} {
+                padding: 15px 0 0 90px;
+                font-size: 1.3rem;
+            }
+
+            @media ${device.mobileS} {
+                padding: 15px 0 0 70px;
+                font-size: 1.3rem;
+            }
         `}
 `;
 
@@ -88,6 +98,12 @@ const ProfileImg = styled.img`
     position: relative;
     left: 20px;
     bottom: 30px;
+
+    @media ${device.mobileS} {
+        width: 35px;
+        height: 35px;
+        bottom: 10px;
+    }
 `;
 
 export default ReviewSummary;
